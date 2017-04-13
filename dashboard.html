@@ -17,7 +17,6 @@
    <div class="dash-heading-text" >
      <img class="dash-heading-image" src="image/logo.png"> &nbsp Outpatient Healthcare <span>Logout</span>
    </div>
-
    <!-- <div class="search"><input type="text" name="search" placeholder="Search.."></div> -->
   <!-- Charts !--> 
    <div class="container">
@@ -39,117 +38,9 @@
            </div>
         </div>
     </div>
-
 </div>
-
-   <!-- Table !-->
-	<!-- <div class="divTable">
-		<div class="divTableBody">
-		<div class="divTableRow">
-		<div class="divTableCell">ID&nbsp;</div>
-		<div class="divTableCell">Patient Name&nbsp;</div>
-		<div class="divTableCell">Patient Number&nbsp;</div>
-		<div class="divTableCell">Patient Height&nbsp;</div>
-		<div class="divTableCell">Patient Weight&nbsp;</div>
-		<div class="divTableCell">Patient Age&nbsp;</div>
-		<div class="divTableCell">Patient Gender&nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">1&nbsp;</div>
-		<div class="divTableCell">John &nbsp;</div>
-		<div class="divTableCell">1237556786&nbsp;</div>
-		<div class="divTableCell">182&nbsp;</div>
-		<div class="divTableCell">176&nbsp;</div>
-		<div class="divTableCell">39&nbsp;</div>
-		<div class="divTableCell">Male&nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">2&nbsp;</div>
-		<div class="divTableCell">Smith&nbsp;</div>
-		<div class="divTableCell">2345678989&nbsp;</div>
-		<div class="divTableCell">180.5&nbsp;</div>
-		<div class="divTableCell">187.3&nbsp;</div>
-		<div class="divTableCell">34&nbsp;</div>
-		<div class="divTableCell">Male&nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">3&nbsp;</div>
-		<div class="divTableCell">Linda&nbsp;</div>
-		<div class="divTableCell">9983435678&nbsp;</div>
-		<div class="divTableCell">160&nbsp;</div>
-		<div class="divTableCell">146&nbsp;</div>
-		<div class="divTableCell">29&nbsp;</div>
-		<div class="divTableCell">Female&nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">4&nbsp;</div>
-		<div class="divTableCell">Mike&nbsp;</div>
-		<div class="divTableCell">1234567282&nbsp;</div>
-		<div class="divTableCell">180.1&nbsp;</div>
-		<div class="divTableCell">179.4&nbsp;</div>
-		<div class="divTableCell">40&nbsp;</div>
-		<div class="divTableCell">Male&nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">5&nbsp;</div>
-		<div class="divTableCell">Lopez&nbsp;</div>
-		<div class="divTableCell">6504583739&nbsp;</div>
-		<div class="divTableCell">176&nbsp;</div>
-		<div class="divTableCell">190&nbsp;</div>
-		<div class="divTableCell">37&nbsp;</div>
-		<div class="divTableCell">Male &nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">6&nbsp;</div>
-		<div class="divTableCell">David&nbsp;</div>
-		<div class="divTableCell">6507895678&nbsp;</div>
-		<div class="divTableCell">179&nbsp;</div>
-		<div class="divTableCell">170&nbsp;</div>
-		<div class="divTableCell">36&nbsp;</div>
-		<div class="divTableCell">Male&nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">7&nbsp;</div>
-		<div class="divTableCell">Ronaldo&nbsp;</div>
-		<div class="divTableCell">4084545676&nbsp;</div>
-		<div class="divTableCell">176&nbsp;</div>
-		<div class="divTableCell">180&nbsp;</div>
-		<div class="divTableCell">38&nbsp;</div>
-		<div class="divTableCell">Male&nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">8&nbsp;</div>
-		<div class="divTableCell">Racheal&nbsp;</div>
-		<div class="divTableCell">4986767232&nbsp;</div>
-		<div class="divTableCell">159&nbsp;</div>
-		<div class="divTableCell">140&nbsp;</div>
-		<div class="divTableCell">27&nbsp;</div>
-		<div class="divTableCell">Female&nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">9&nbsp;</div>
-		<div class="divTableCell">David&nbsp;</div>
-		<div class="divTableCell">6507895678&nbsp;</div>
-		<div class="divTableCell">179&nbsp;</div>
-		<div class="divTableCell">170&nbsp;</div>
-		<div class="divTableCell">36&nbsp;</div>
-		<div class="divTableCell">Male&nbsp;</div>
-		</div>
-		<div class="divTableRow">
-		<div class="divTableCell">10&nbsp;</div>
-		<div class="divTableCell">Mike&nbsp;</div>
-		<div class="divTableCell">1234567282&nbsp;</div>
-		<div class="divTableCell">180.1&nbsp;</div>
-		<div class="divTableCell">179.4&nbsp;</div>
-		<div class="divTableCell">40&nbsp;</div>
-		<div class="divTableCell">Male&nbsp;</div>
-		</div>
-		</div>
-		</div>
-	</div> -->
 </body>
 <script type="text/javascript">
-
 window.onload = function () {
 loadBPChart();
 loadStepsChart();
@@ -164,26 +55,26 @@ CanvasJS.addColorSet("greenShades",
 var chart1 = new CanvasJS.Chart("stepsContainer",
 
 	{
-		colorSet: "greenShades",
+    colorSet: "greenShades",
     backgroundColor: "rgba(255,255,255, 0.3)",
     zoomEnabled: true,
 		animationEnabled: true,
 		theme: "theme4",
 
     title:{
-      text: "Steps"
+           text: "Steps"
     },
     axisY:{  
             title: "Number of Steps" 
     },
-       axisX:{  
+    axisX:{  
             title: "Month" ,  
             valueFormatString: "DD MMM YY"
     },
     data: [
     {
-      type: "column", //change type to bar, line, area, pie, etc
-      dataPoints: [
+           type: "column", //change type to bar, line, area, pie, etc
+           dataPoints: [
         { x: new Date(2017, 00, 01), y: 5000 },
         { x: new Date(2017, 00, 02), y: 5500 },
         { x: new Date(2017, 00, 03), y: 5300 },
@@ -335,15 +226,15 @@ function createGauge(chart){
 				{ x: new Date(2017,0,1),  y: 72 },
 				{ x: new Date(2017,0,10), y: 80 },
 				{ x: new Date(2017,0,20), y: 66 },
-        { x: new Date(2017,0,31), y: 72 },          
-        { x: new Date(2017,1,1),  y: 63 },
-				{ x: new Date(2017,1,10), y: 90 },
+			        { x: new Date(2017,0,31), y: 72 },          
+				{ x: new Date(2017,1,1),  y: 63 },
+			        { x: new Date(2017,1,10), y: 90 },
 				{ x: new Date(2017,1,20), y: 87 },
-        { x: new Date(2017,1,28), y: 120,indexLabel: "High", markerType: "triangle",markerColor: "red", markerSize: 10 },
-        { x: new Date(2017,2,1),  y: 99 },
+               			{ x: new Date(2017,1,28), y: 120,indexLabel: "High", markerType: "triangle",markerColor: "red", markerSize: 10 },
+       			        { x: new Date(2017,2,1),  y: 99 },
 				{ x: new Date(2017,2,10), y: 80 },
 				{ x: new Date(2017,2,20), y: 87 },
-        { x: new Date(2017,2,31), y: 62, indexLabel: "Low", markerType: "cross",markerColor: "red" , markerSize: 10  }
+       			        { x: new Date(2017,2,31), y: 62, indexLabel: "Low", markerType: "cross",markerColor: "red" , markerSize: 10  }
 			]
 		}]
   });
