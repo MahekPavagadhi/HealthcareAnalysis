@@ -14,8 +14,6 @@ function createGauge(chart){
    if(!gauge.data.color)
     	gauge.data.color = "#008080";
    gauge.valueText = {text: gauge.data.y.toString(), verticalAlign :"center", fontColor: "#008080"};
-   
-   
 		var data = {
         	  type: "doughnut",
                   backgroundColor: "black",
