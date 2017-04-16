@@ -177,19 +177,16 @@ function createGauge(chart){
                   gauge.unoccupied
                 ],
       };
-    
     if(!chart.options.data)
     	chart.options.data = [];
     chart.options.data.push(data);
-    
     if(gauge.title){
     	chart.options.title = gauge.title;
     }
     //For showing value
     if(!chart.options.subtitles)
     	chart.options.subtitles = [];
-    chart.options.subtitles.push(gauge.valueText);
-    
+    chart.options.subtitles.push(gauge.valueText); 
     chart.render();
 }
 
