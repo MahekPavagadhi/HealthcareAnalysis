@@ -147,12 +147,9 @@ var gauge = {
     };
 
 var chart = new CanvasJS.Chart("dailyStepsContainer");
-
 createGauge(chart);
-
 //Function for gauge
 function createGauge(chart){
-
 		//Caluculation of remaining parameters to render gauge with the help of doughnut
     gauge.unoccupied = {
                       y: gauge.maximum - gauge.data.y , 
@@ -188,7 +185,6 @@ function createGauge(chart){
     if(gauge.title){
     	chart.options.title = gauge.title;
     }
-    
     //For showing value
     if(!chart.options.subtitles)
     	chart.options.subtitles = [];
